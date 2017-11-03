@@ -1,0 +1,17 @@
+{
+  "enabled": 1,
+  "hidden": false,
+  "description": "A Nix based OS, but not NixOS",
+  "nixexprinput": "configs",
+  "nixexprpath": "vpsadminos/default.nix",
+  "checkinterval": 60,
+  "schedulingshares": 100,
+  "enableemail": false,
+  "emailoverride": "",
+  "keepnr": 10,
+  "inputs":{
+    "nixpkgs": { "type": "git", "value": "https://github.com/NixOS/nixpkgs-channels.git nixos-unstable", "emailresponsible": false },
+    "configs": { "type": "git", "value": "https://git.48.io/vpsadminos-hydra-config master", "emailresponsible": false },
+    "pulls": { "type": "githubpulls", "value": "vpsfreecz vpsadminos", "emailresponsible": false }
+  }
+}
