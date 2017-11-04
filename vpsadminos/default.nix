@@ -26,6 +26,14 @@ let
         supportedSystems2 = { type = "nix"; value = ''[ "x86_64-linux" ]''; emailresponsible = false; };
       };
     };
+    vpsadminos-sorki = defaults // {
+      description = "vpsadminos-sorki";
+      inputs = {
+        vpsadminos = mkFetchGithub "https://github.com/vpsfreecz/vpsadminos master";
+        nixpkgs = mkFetchGithub "https://github.com/sorki/nixpkgs.git vpsadminos";
+        supportedSystems2 = { type = "nix"; value = ''[ "x86_64-linux" ]''; emailresponsible = false; };
+      };
+    };
   };
   pr_data = builtins.fromJSON (builtins.readFile pulls);
   makePr = num: info: {
