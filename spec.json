@@ -1,7 +1,7 @@
 {
   "enabled": 1,
   "hidden": false,
-  "description": "A Nix based OS, but not NixOS",
+  "description": "vpsadminOS",
   "nixexprinput": "configs",
   "nixexprpath": "vpsadminos/default.nix",
   "checkinterval": 60,
