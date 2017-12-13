@@ -7,7 +7,7 @@ with pkgs.lib;
 let
   defaults = globalDefaults // {
     nixexprinput = "vpsadminos";
-    nixexprpath = "release.nix";
+    nixexprpath = "os/release.nix";
   };
   primary_jobsets = {
     vpsadminos-unstable = defaults // {
