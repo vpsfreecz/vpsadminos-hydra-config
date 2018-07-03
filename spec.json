@@ -11,7 +11,6 @@
   "keepnr": 10,
   "inputs":{
     "nixpkgs": { "type": "git", "value": "https://github.com/NixOS/nixpkgs-channels.git nixos-unstable", "emailresponsible": false },
-    "configs": { "type": "git", "value": "https://github.com/vpsfreecz/vpsadminos-hydra-config master", "emailresponsible": false },
-    "pulls": { "type": "githubpulls", "value": "vpsfreecz vpsadminos", "emailresponsible": false }
+    "configs": { "type": "git", "value": "https://github.com/vpsfreecz/vpsadminos-hydra-config master", "emailresponsible": false }
   }
 }
