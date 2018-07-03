@@ -10,6 +10,7 @@ let
     nixexprpath = "os/release.nix";
   };
   primary_jobsets = {
+    /*
     vpsadminos-unstable = defaults // {
       description = "vpsadminos-unstable";
       inputs = {
@@ -26,6 +27,7 @@ let
         supportedSystems2 = { type = "nix"; value = ''[ "x86_64-linux" ]''; emailresponsible = false; };
       };
     };
+    */
     vpsadminos-vpsfree = defaults // {
       description = "vpsadminos-vpsfree";
       inputs = {
